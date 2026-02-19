@@ -33,9 +33,13 @@ El proyecto está desarrollado en **Python**, utilizando un entorno virtual (`ve
 tech-jobs-data-analysis/
 │
 ├── venv/                  # Entorno virtual
+├── master_data/           # Archivos excel(xlsx)
 ├── utils/
-│   └── scraper.py         # Lógica de extracción de datos
+│   └── data_cleaning.py         # Lógica de limpieza de datos
+│   └── jobs_categorization.py   # Lógica para la categorización de datos
+│   └── scraper.py               # Lógica de extracción de datos
 ├── main.py                # Punto de entrada del proyecto
+├── config.py              # Configuraciones globales del proyecto
 ├── requirements.txt       # Dependencias del proyecto
 └── README.md              # Documentación
 ```
