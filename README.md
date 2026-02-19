@@ -26,23 +26,6 @@ Este proyecto tiene como objetivo recopilar información de empleos del mundo te
 
 El proyecto está desarrollado en **Python**, utilizando un entorno virtual (`venv`) para aislar dependencias.
 
-### Librerías principales:
-
-* pandas==2.3.3
-* numpy==1.26.3
-* python-jobspy==1.1.82
-* requests==2.32.5
-* beautifulsoup4==4.14.3
-* markdownify==0.13.1
-* pydantic==2.12.5
-* regex==2024.11.6
-* python-dateutil==2.9.0.post0
-* pytz==2025.2
-* tzdata==2025.3
-* urllib3==2.6.3
-* tls-client==1.0.1
-
----
 
 ## 📂 Estructura del Proyecto
 
