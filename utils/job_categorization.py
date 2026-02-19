@@ -16,7 +16,7 @@ class JobsCategorization:
         for value, profile in self.job_level_dict.items():
             if value.lower() in job_name_lower:
                 return profile
-            return "Mid-Level"
+        return "Mid-Level"
     
     # Función para categorizar el grupo del trabajo basado en el título del trabajo    
     def job_group(self, job_name):
