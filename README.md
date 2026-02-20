@@ -51,35 +51,35 @@ tech-jobs-data-analysis/
 ## ⚙️ Instalación
 
 1️⃣ Clonar el repositorio
-
+```
 git clone https://github.com/tu-usuario/jobs-data-analysis.git
-
 cd jobs-data-analysis
-
-### 2️⃣ Crear entorno virtual
-
+```
+2️⃣ Crear entorno virtual
+```
 python -m venv venv
-
-### 3️⃣ Activar entorno virtual
+```
+3️⃣ Activar entorno virtual
 
 Windows:
-
+```
 venv\Scripts\activate
-
+```
 Mac / Linux:
-
+```
 source venv/bin/activate
-
-### 4️⃣ Instalar dependencias
-
+```
+4️⃣ Instalar dependencias
+```
 pip install -r requirements.txt
-
+```
 ---
 
 ## ▶️ Ejecución
 
+```
 python main.py
-
+```
 El flujo general del proyecto incluye:
 
 1. Extracción de datos desde fuentes de empleo.
