@@ -37,7 +37,8 @@ tech-jobs-data-analysis/
 ├── master_data/           # Archivos excel(xlsx)
 ├── utils/
 │   └── data_cleaning.py         # Lógica de limpieza de datos
-│   └── jobs_categorization.py   # Lógica para la categorización de datos
+│   └── jobs_categorization.py   # Lógica para la categorización de datos en función de su título, descripción y ubicación(remoto, hibrido, presencial)
+│   └── location_processing.py   # Lógica que se encarga de procesar y categorizar la información de ubicación de los trabajos(ciudad, estado, país)
 │   └── scraper.py               # Lógica de extracción de datos
 ├── main.py                # Punto de entrada del proyecto
 ├── config.py              # Configuraciones globales del proyecto
