@@ -1,6 +1,7 @@
 import pandas as pd
 from config import JOB_LEVEL_DICT, JOB_GROUP_DICT, REMOTE_KEYWORDS
 
+# Esta clase se encarga de categorizar los trabajos en función de su título, descripción y ubicación. Utiliza los diccionarios de niveles de trabajo y grupos de trabajo definidos en el archivo de configuración para asignar categorías a cada trabajo. Además, identifica si un trabajo es remoto, híbrido o presencial basándose en la información disponible.
 class JobsCategorization:
     
     def __init__(self):
