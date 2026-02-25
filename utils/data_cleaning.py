@@ -1,6 +1,7 @@
 import re
 from utils.job_categorization import JobsCategorization
 from utils.location_processing import LocationProcessor
+from utils.salary_cleaning import SalaryProcessor
 
 # Esta clase se encarga de limpiar los datos obtenidos del scraper, eliminando duplicados, filas con valores nulos en la descripción y filas con id vacíos. Además, rellena los valores nulos en la columna de ubicación con una cadena vacía.
 class DataCleaning:
@@ -28,4 +29,8 @@ class DataCleaning:
         locationer = LocationProcessor()
         df = locationer.city_state(df)
         
-        return df
+        # Limpiar los salarios utilizando la clase SalaryProcessor
+        salarier = SalaryProcessor()
+        df = salarier.clean_salaries(df)
+        
+        return df 

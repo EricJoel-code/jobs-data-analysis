@@ -13,3 +13,16 @@ REMOTE_KEYWORDS = ['remote', 'hybrid', 'on site']
 
 states_df = pd.read_excel('master_data/states.xlsx')
 STATES_DICT = states_df.set_index('State')['Code'].to_dict()
+
+# Definimos un diccionario que contiene factores de conversión para diferentes intervalos de tiempo. Esto se utilizará para convertir salarios a una base anual, facilitando la comparación entre diferentes ofertas de trabajo que pueden tener salarios expresados en diferentes intervalos (por ejemplo, mensual, semanal, diario, etc.).
+INTERVAL_FACTORS = {'yearly':1, 'monthly':12, 'weekly':49, 'daily':230, 'hourly':1840}
+
+skills_df = pd.read_excel('master_data/skills.xlsx')
+SKILLS_DICT = skills_df.set_index('Skills')['Group'].to_dict()
+
+EDUCATION_PRIORITY = {"None":0, "Bachelor":1, "Master":2, "MBA":3, "Phd":4}
+
+CATEGORIES = {
+    'programming_lenguajes': {"Python", "Java", "C++", "JavaScript", "R", "SQL", "Go", "Ruby", "PHP", "Rust", "C#", "DAX", "VBA", "ABAP", "HTML", "CSS", "Julia", "Swift"},
+    'lenguajes':{"English", "Spanish", "French", "German", "Chinese", "Japanese", "Portuguese", "Russian", "Arabic", "Hindi"}
+}
