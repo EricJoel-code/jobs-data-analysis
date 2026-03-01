@@ -44,6 +44,7 @@ tech-jobs-data-analysis/
 │   └── scraper.py               # Lógica de extracción de datos
 ├── main.py                # Punto de entrada del proyecto
 ├── config.py              # Configuraciones globales del proyecto
+├── Data job market analysis.ipynb    # Entorno interactivo para el análisis de datos
 ├── requirements.txt       # Dependencias del proyecto
 └── README.md              # Documentación
 ```
